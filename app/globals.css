@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #f2b134;
+  --color-accent-dark: #b9791f;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.hero-bg {
+  background-image: url("/bg/scene-wide.png");
+}
+
+@media (orientation: portrait) {
+  .hero-bg {
+    background-image: url("/bg/scene-tall.png");
+  }
+}
+
+.grain-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  mix-blend-mode: overlay;
+  opacity: 0.3;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.vinyl-spin {
+  animation: spin 8s linear infinite;
+}

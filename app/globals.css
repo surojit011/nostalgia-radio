@@ -11,12 +11,12 @@ body {
 }
 
 .hero-bg {
-  background-image: url("/bg/scene-wide.png");
+  background-image: url("/nostalgia-radio/bg/scene-wide.png");
 }
 
 @media (orientation: portrait) {
   .hero-bg {
-    background-image: url("/bg/scene-tall.png");
+    background-image: url("/nostalgia-radio/bg/scene-tall.png");
   }
 }
 

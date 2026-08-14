@@ -2,8 +2,16 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "",
+  "basePath": "/nostalgia-radio",
   "redirects": [
+    {
+      "source": "/nostalgia-radio/",
+      "destination": "/nostalgia-radio",
+      "basePath": false,
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^/nostalgia-radio/$"
+    },
     {
       "source": "/:path+/",
       "destination": "/:path+",

@@ -1,8 +1,6 @@
-declare global {
-  interface Window {
-    YT: typeof YT;
-    onYouTubeIframeAPIReady?: () => void;
-  }
+interface Window {
+  YT: typeof YT;
+  onYouTubeIframeAPIReady?: () => void;
 }
 
 declare namespace YT {
@@ -61,5 +59,3 @@ declare namespace YT {
     CUED: 5;
   };
 }
-
-export {};
